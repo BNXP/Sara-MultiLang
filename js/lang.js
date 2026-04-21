@@ -4,7 +4,7 @@
 
 const LANG_CONFIG = {
   supported: ['en', 'ar', 'tr', 'fr'],
-  default: 'en',
+  default: 'ar',
   rtl: ['ar'],
   // Country-code -> language mapping (common Middle East / North Africa / Europe)
   countryMap: {
