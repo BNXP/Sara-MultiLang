@@ -107,12 +107,7 @@ async function detectLanguageByIP() {
     }
   }
 
-  // 3. Fallback to browser language
-  const browserLang = (navigator.language || navigator.userLanguage || 'en').slice(0, 2).toLowerCase();
-  if (LANG_CONFIG.supported.includes(browserLang)) {
-    return browserLang;
-  }
-
+  // 3. Default language (Arabic)
   return LANG_CONFIG.default;
 }
 
